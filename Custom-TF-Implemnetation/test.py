@@ -38,7 +38,7 @@ def main():
 		model_var_type=model_var_type, loss_type=loss_type
 	)
 
-	batch_size = 32
+	batch_size = 4#32
 
 	# UNet hyperparameters.
 	channels = 3
@@ -182,4 +182,5 @@ def bpd_fn(x, y, unet, diffusion):
 
 
 if __name__ == '__main__':
-	main()
+	with tf.device("/cpu:0"):
+		main()
