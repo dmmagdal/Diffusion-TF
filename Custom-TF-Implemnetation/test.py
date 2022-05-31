@@ -12,6 +12,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+from tensorflow.keras import mixed_precision
 import tensorflow_datasets as tfds
 from gaussian_diffusion import GaussianDiffusion2, get_beta_schedule
 from unet import create_unet_model
@@ -182,5 +183,8 @@ def bpd_fn(x, y, unet, diffusion):
 
 
 if __name__ == '__main__':
-	with tf.device("/cpu:0"):
-		main()
+	policy = mixed_precision.Policy("mixed_float16")
+	mixed_precision.set_global_policy(policy)
+	main()
+	# with tf.device("/cpu:0"):
+	# 	main()

@@ -470,6 +470,9 @@ class GaussianDiffusion2:
 			# model_output = denoise_fn(x_t, t) # Original. Threw error because it did not pass sufficient arguments to unet
 			model_output = denoise_fn([x_t, t])
 			assert model_output.shape == target.shape == x_start.shape
+			target = tf.cast(target, dtype=tf.float16)
+			# target = tf.cast(target, dtype=tf.bfloat16)
+			# model_output = tf.cast(model_output, dtype=tf.bfloat16)
 			losses = nn.meanflat(tf.math.squared_difference(
 				target, model_output
 			))
