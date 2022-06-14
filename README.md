@@ -9,6 +9,7 @@ Description: Implement the original Diffusion model [code](https://github.com/ho
  - OpenAI's [Guided-Diffusion](https://github.com/openai/guided-diffusion) GitHub repository, related to the [Diffusion Models Beat GANs on Image Synthesis paper](https://arxiv.org/pdf/2105.05233.pdf)
  - OpenAI's [Glide-text2im](https://github.com/openai/glide-text2im) GitHub repository (note that there is no code for training this model and all model weights available are for a smaller, less powerful version of what OpenAI presents in their [paper](https://arxiv.org/pdf/2112.10741.pdf))
  - OpenAI's [Improved-Diffusion](https://github.com/openai/improved-diffusion) GitHub repository, related to the [Improved Denoising Diffusion Probabilistic Models paper](https://arxiv.org/pdf/2102.09672.pdf)
+ - [Medium](https://medium.com/graphcore/a-new-sota-for-generative-modelling-denoising-diffusion-probabilistic-models-8e21eec6792e) article providing an overview of Diffusion Models
 
 
 ### Notes
