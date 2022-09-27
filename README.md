@@ -10,6 +10,10 @@ Description: Implement the original Diffusion model [code](https://github.com/ho
  - OpenAI's [Glide-text2im](https://github.com/openai/glide-text2im) GitHub repository (note that there is no code for training this model and all model weights available are for a smaller, less powerful version of what OpenAI presents in their [paper](https://arxiv.org/pdf/2112.10741.pdf))
  - OpenAI's [Improved-Diffusion](https://github.com/openai/improved-diffusion) GitHub repository, related to the [Improved Denoising Diffusion Probabilistic Models paper](https://arxiv.org/pdf/2102.09672.pdf)
  - [Medium](https://medium.com/graphcore/a-new-sota-for-generative-modelling-denoising-diffusion-probabilistic-models-8e21eec6792e) article providing an overview of Diffusion Models
+ - Medium article: [Diffusion models made easy](https://towardsdatascience.com/diffusion-models-made-easy-8414298ce4da)
+ - Huggingface blogpost: [The annotated diffusion model](https://huggingface.co/blog/annotated-diffusion)
+ - Keras Example: [Denoising Diffusion Implicit Models](https://keras.io/examples/generative/ddim/)
+ - Medium article: [Image generation with diffusion models using keras and tensorflow](https://medium.com/@vedantjumle/image-generation-with-diffusion-models-using-keras-and-tensorflow-9f60aae72ac)
 
 
 ### Notes
